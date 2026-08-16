@@ -1,0 +1,152 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 10fr 1fr;
+    gap: 3px;
+    text-align: center;
+    overflow: hidden; /*@*/
+
+}
+header{
+    background-color: rgb(35, 221, 35);
+
+}
+nav{
+background-color: blueviolet;
+}
+main{
+background-color: aqua;
+}
+footer{
+    background-color: brown;
+
+}
+
+
+header, nav, main, footer {
+    transition: background-color 0.8s ease;
+}
+
+
+@media screen and (max-width: 400px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3px;
+    }
+
+    header {
+        background-color: blueviolet;
+    }
+
+    nav {
+        background-color: brown;
+    }
+
+    main {
+        background-color: aqua;
+    }
+
+    footer {
+        background-color: azure;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        gap: 3px;
+    }
+
+    header {
+        background-color: orange;
+    }
+
+    nav {
+        background-color: crimson;
+    }
+
+    main {
+        background-color: lightgreen;
+    }
+
+    footer {
+        background-color: gold;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 3px;
+    }
+
+    header {
+        background-color: teal;
+    }
+
+    nav {
+        background-color: darkorange;
+    }
+
+    main {
+        background-color: violet;
+    }
+
+    footer {
+        background-color: lightcoral;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        gap: 3px;
+        background-color: hotpink;
+    }
+
+    header {
+        background-color: blue;
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    nav {
+        background-color: darkgreen;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main {
+        background-color: darkcyan;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    footer {
+        background-color: darkslateblue;
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+}
