@@ -36,10 +36,12 @@ main{
     grid-template-columns:1fr 4fr;
     gap:5px;
 }
-aside{
+aside {
     background-color: aquamarine;
-
+    overflow-y: auto; 
 }
+
+
 section{
 
     border:1px solid gray;
