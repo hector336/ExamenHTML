@@ -36,16 +36,10 @@ main{
     grid-template-columns:1fr 4fr;
     gap:5px;
 }
-
-aside {
+aside{
     background-color: aquamarine;
-    overflow-y: auto;
-    overflow-x: hidden;
-    min-height: 0;
-    min-width: 0;
-    padding: 5px;
-}
 
+}
 section{
 
     border:1px solid gray;
@@ -68,18 +62,14 @@ footer {
 }
 
 
-
-#boton {
-    display: block;
-    width: 95%;
-    min-height: 45px;
-    height: auto;
-    margin: 5px auto;
-    background-color: blueviolet;
-    color: white;
-    padding: 10px 3px;
-    border-radius: 5px;
-    text-decoration: none;
-    overflow-wrap: anywhere;
-    font-size: 14px;
+#boton{
+    display:block;
+    width:200px;
+    height:50px;
+    margin:5px auto;
+    background:blueviolet;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    text-decoration:none;
 }
